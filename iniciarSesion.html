@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col ior d-block d-sm-none text-center">
+                <span>INICIAR SESION</span>
+            </div><br>
+            <div class="col-sm-6 col iniciarOregistrar">
+                <img class= 'logo' src="css/img/logo.png" alt="logo Social Bio"><br><br><br>
+                <span style="color: #F0700B">Email</span><br>
+                <input type="email" id="inputEmail" class="form-registrarNaranja" required="" autofocus=""><br>
+                <span style="color: #277254">Contraseña</span><br>
+                <input type="password" id="intputContraseña" class="form-registrarVerde" required="" autofocus=""><br>
+                <input type="checkbox" onclick="myFunction()">Mostrar Contraseña <br><br><br><br>
+
+                <script>
+                function myFunction() {
+                var x = document.getElementById("intputContraseña");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+                }
+                </script>
+                <div class="btn-iniciarSesion">
+                    <a href="#" >INICIAR SESION</a>
+                </div>
+            </div>
+            <div class="col-6 ior d-none d-sm-block">
+                <span>INICIAR SESION</span>
+            </div>
+        </div> 
+
+    </div>
+</body>
+</html>
