@@ -59,7 +59,7 @@ app.post('/registrar', function(req,res){
     } 
 });
 
-app.put('/usuario/:idUsuario', function(req,res){
+app.put('/actualizar/:idUsuario', function(req,res){
     var actualizar = req.body;
     console.log(actualizar);
     var idUsuario = parseInt(req.params.idUsuario);
@@ -94,4 +94,8 @@ app.put('/usuario/:idUsuario', function(req,res){
             res.send('actualizar el usuario: ' + result.insertId);
         });
     } 
+});
+
+app.get('/eliminar', function(req,res){
+    
 });
