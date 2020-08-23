@@ -1,9 +1,14 @@
 var mysql = require('mysql');
-var express = require('express');
 
+var express = require('express');
 var app = express();
+
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
+
+const path  = require('path')
+const  publicDirectory = path.join(__dirname, '../public/')
+app.use(express.static(publicDirectory));
 
 var con = mysql.createConnection({
     host: 'localhost',
