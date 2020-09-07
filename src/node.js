@@ -49,13 +49,15 @@ app.post('/registrarUsuario', function(req,res){
     }
     else{
         var usuarioArray = [
+            registrar.nombre, 
+            registrar.apellido, 
             registrar.usuario, 
             registrar.contraseña, 
             registrar.biografia, 
             registrar.fotoDePerfil, 
             registrar.email
         ];
-        con.query('INSERT INTO Usuarios (usuario, contraseña, biografia, fotoDePerfil, email) VALUES (?,?,?,?,?)', usuarioArray, function(err,result){
+        con.query('INSERT INTO Usuarios (nombre, apellido, usuario, contraseña, biografia, fotoDePerfil, email) VALUES (?,?,?,?,?,?,?)', usuarioArray, function(err,result){
             if(err){
                 throw err;
             }
@@ -68,6 +70,8 @@ app.put('/editarUsuario/:usuario', function(req,res){
     var actualizar = req.body;
     var usuario = req.params.usuario;
     var usuarioArray = [
+        actualizar.nombre,
+        actualizar.apellido,
         actualizar.usuario, 
         actualizar.contraseña, 
         actualizar.biografia, 
@@ -75,7 +79,7 @@ app.put('/editarUsuario/:usuario', function(req,res){
         actualizar.email,
         usuario
     ];
-    con.query('UPDATE Usuarios SET usuario = ?, contraseña = ?, biografia = ?, fotoDePerfil = ?, email = ? WHERE usuario = ?', usuarioArray, function(err,result){
+    con.query('UPDATE Usuarios SET nombre = ?, apellido = ?,usuario = ?, contraseña = ?, biografia = ?, fotoDePerfil = ?, email = ? WHERE usuario = ?', usuarioArray, function(err,result){
         if(err){
             throw err;
         }
@@ -102,6 +106,7 @@ app.post('/publicar', function(req,res){
     }
     else{
         var publicacionArray = [
+            publicar.seccion,
             publicar.descripcion,
             publicar.multimedia,
             publicar.usuario
@@ -116,8 +121,8 @@ app.post('/publicar', function(req,res){
 });
 
 app.put('/editarPublicacion/:idPublicacion', function(req,res){
-    var actualizar = [req.body.descripcion, req.params.idPublicacion];
-    con.query('UPDATE Publicaciones SET descripcion = ? WHERE idPublicacion = ?', actualizar, function(err,result){
+    var actualizar = [req.body.descripcion, req.body.seccion, req.params.idPublicacion];
+    con.query('UPDATE Publicaciones SET seccion = ?,descripcion = ? WHERE idPublicacion = ?', actualizar, function(err,result){
         if(err){
             throw err;
         }
