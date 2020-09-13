@@ -11,9 +11,9 @@ const  publicDirectory = path.join(__dirname, '../public/')
 app.use(express.static(publicDirectory));
 
 var con = mysql.createConnection({
-    host: 'localhost',
+    host: '104.155.161.18',
     user: 'root',
-    password: 'SocialBio2020',
+    password: 'uade',
     database: 'SocialBio'
 });
 
