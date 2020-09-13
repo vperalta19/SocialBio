@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +9,48 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col ior d-block d-sm-none text-center">
-                <span>INICIAR SESION</span>
-            </div><br>
-            <div class="col-sm-6 col iniciarOregistrar">
-                <img class= 'logo' src="css/img/logo.png" alt="logo Social Bio"><br><br><br>
-                <span style="color: #F0700B">Email</span><br>
-                <input type="email" id="inputEmail" class="form-registrarNaranja" required="" autofocus=""><br>
-                <span style="color: #277254">Contraseña</span><br>
-                <input type="password" id="intputContraseña" class="form-registrarVerde" required="" autofocus=""><br>
-                <input type="checkbox" onclick="myFunction()">Mostrar Contraseña <br><br><br><br>
+            <!-- <div class="col-12 d-sm-none ior text-center">
+                <h1 class="iniciosesion ior">INICIAR SESIÓN</h1>
+            </div> -->
 
-                <script>
-                function myFunction() {
-                var x = document.getElementById("intputContraseña");
-                if (x.type === "password") {
-                    x.type = "text";
-                } else {
-                    x.type = "password";
-                }
-                }
-                </script>
-                <div class="btn-iniciarSesion">
-                    <a href="#" >INICIAR SESION</a>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 iniciarOregistrar ml-1">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 text-center">
+                    <h1 class="registrarse iniciosesion ior">INICIAR SESIÓN</h1>
+                </div>
+              </div>
+                <!-- <img class= 'logo' src="css/img/logo.png" alt="logo Social Bio"> -->
+                <div class="mt-2 mb-3">
+                  <p class="m-0" style="color: #F0700B">Email</p>
+                  <input type="email" id="inputEmail" class="form-registrarNaranja" required="" autofocus="">
+                </div>
+                <div class="mt-1 mb-3">
+                  <p class="m-0" style="color: #277254">Contraseña</p>
+                  <input type="password" id="intputContraseña" class="form-registrarVerde" required="" autofocus="">
+                </div>
+                  <input type="checkbox" onclick="myFunction()" name="" value="">
+                  <span>Mostrar Contraseña</span>
+                <div class="btn-iniciarSesion mt-4 justify-content-center text-center">
+                    <a href="#" >INICIAR SESIÓN</a>
                 </div>
             </div>
-            <div class="col-6 ior d-none d-sm-block">
-                <span>INICIAR SESION</span>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 ior text-center">
+              <!-- <h1 class="iniciosesion">INICIAR SESIÓN</h1> -->
+              <img class= 'logo' src="css/img/logo.png" alt="logo Social Bio">
             </div>
-        </div> 
-
+        </div>
     </div>
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("intputContraseña");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+    }
+    </script>
+
 </body>
 </html>

@@ -2,52 +2,82 @@
     body {
         background-image: url('img/fondoIyRcompu.jpg');
         background-repeat: no-repeat;
-        background-attachment: fixed;  
+        background-attachment: fixed;
         background-size: cover;
       }
     .bienvenido{
         position: relative;
-        margin-top: 125px;
+        margin-top: 50px;
     }
-    .bienvenido span{
+    .bienvenido h1{
         font-family: "Roboto", bold;
-        font-size: 75px;
+        font-size: 50px;
         color: #123b2b;
     }
-    .index .logo{
-        margin-top: 225px;
-    }
+
     .ior{
         position: relative;
-        margin-top: 150px;
-    }
-    .ior span{
+        margin-top: 50px;
         font-family: "Roboto", bold;
         font-size: 30px;
-        color: azul;
+        color: #123b2b;
     }
+
+  .texto{
+    font-size: 20px;
+  }
 }
+.ior{
+    position: relative;
+    margin-top: 50px;
+    font-family: "Roboto", bold;
+    font-size: 30px;
+    color: #123b2b;
+}
+
 
 @media (min-width: 991px) {
     .ior{
         position: relative;
-        margin-top: 150px;
-        
+        margin-top: 50px;
+
     }
     .ior span{
         font-family: "Roboto", bold;
         font-size: 50px;
-        color: azul;
+        color: blue;
+    }
+    .registrarse{
+      font-size: 50px;
     }
 }
 
+@media (max-width: 1000px){
+  .logo{
+    display:none;
+  }
+  .logomobile{
+    display: block;
+  }
 
+}
+@media(min-width: 1001px){
+  .logomobile{
+    display:none;
+    margin-top: 50px;
+  }
+}
+@media(max-width: 860px){
+  .menu{
+    font-size: 12px;
+  }
+}
 
 @media (max-width: 575px) {
     body {
         background-image: url('img/fondoIyRcelu.jpg');
         background-repeat: no-repeat;
-        background-attachment: fixed;  
+        background-attachment: fixed;
         background-size: cover;
     }
     .index .logo{
@@ -57,12 +87,12 @@
         position: relative;
         margin-top: 50px;
     }
-    
-    .bienvenido span{
-        font-family: "Roboto", bold;
+
+    .bienvenido h1{
+        /* font-family: "Roboto", bold; */
         font-size: 50px;
-        color: #123b2b;
-    }
+        /* color: #123b2b; */
+     }
 
     .ior{
         position: relative;
@@ -73,40 +103,24 @@
         font-size: 50px;
         color: #123b2b;
     }
-    
-}
-.iniciarOregistrar .btn-registrar a{
-    font-size: 15px;
-    background: linear-gradient(to right, #277254, #133829);
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 50px;
-    border-radius: 50px;
-    font-family: "Roboto", thick;
-} 
 
-.iniciarOregistrar .btn-iniciarSesion a{
-    font-size: 15px;
+
+}
+.btn-registrar a{
+    background: linear-gradient(to right, #277254, #133829);
+}
+
+.btn-iniciarSesion a{
     background: linear-gradient(to right, #f0b13c, #F0700B);
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 50px;
-    border-radius: 50px;
-    font-family: "Roboto", thick;
-} 
+}
 
 .index{
     font-family: "Roboto", thick;
 }
 
 
-.index p{
-    font-size: 15px;
-}
 
-
-.index .btn-iniciarSesion a{
-    font-size: 15px;
+.btn-iniciarSesion a{
     background: linear-gradient(to right, #f0b13c, #F0700B);
     color: #ffffff;
     text-decoration: none;
@@ -115,26 +129,22 @@
     font-family: "Roboto", thick;
 
 }
-
-.index .btn-registrar a{
-    font-size: 15px;
+/*BOTONES DEL INICIO (REGISTRAR O INICIAR SESION)*/
+.btn-registrar a{
     background: linear-gradient(to right, #277254, #133829);
     color: #ffffff;
     text-decoration: none;
-    padding: 10px 54px;
     border-radius: 50px;
+    padding: 10px 50px;
     font-family: "Roboto", thick;
 
-} 
-
-.index .btn-iniciarSesion a:hover{
+}
+.btn-iniciarSesion a:hover{
     background: linear-gradient(to right, #ffc353, #ff913c);
 }
-
-.index .btn-registrar a:hover{
+.btn-registrar a:hover{
     background: linear-gradient(to right, #3da87d, #17533b);
-
-} 
+}
 
 /*REGISTRAR O INICIAR SESION*/
 .iniciarOregistrar{
@@ -166,10 +176,47 @@
 }
 
 
-.iniciarOregistrar .btn-registrar a:hover{
+/* .btn-registrar a:hover{
     background: linear-gradient(to right, #3da87d, #17533b);
-} 
+} */
 
-.iniciarOregistrar .btn-iniciarSesion a:hover{
+.btn-iniciarSesion a:hover{
     background: linear-gradient(to right, #ffc353, #ff913c);
-} 
+}arOregistrar .btn-iniciarSesion a:hover{
+    background: linear-gradient(to right, #ffc353, #ff913c);
+}
+
+img{
+  max-width: 100%;
+}
+ul{
+  padding:0;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+.menu{
+  list-style-type:none;
+  cursor:pointer;
+}
+.menulateral{
+  height: 100%;
+}
+.navbar, .menulateral{
+  background-color: orange;
+}
+li{
+  text-decoration: none;
+}
+
+@media (min-width: 720px) {
+  .navbar{
+    display:none;
+  }
+}
+@media (max-width: 720px) {
+  .menulateral, .header{
+    display:none;
+  }
+}
