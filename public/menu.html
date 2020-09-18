@@ -9,37 +9,6 @@
     <script src="https://kit.fontawesome.com/2d1ba68bac.js" crossorigin="anonymous"></script>
 
   </head>
-  <style>
-
-    nav {
-    background: linear-gradient(89.96deg, #F66B0A 0.03%, #FBB044 99.96%);
-    }
-    .menulateral {
-    background: linear-gradient(180deg, #F66A09 0%, #FBB044 100%);
-    }
-    .fas {
-    color: white;
-    }
-    .top {
-    display: inline;
-    }
-    #headertop {
-    text-align: right;
-    }
-    .fotousuario, .iconoboton{
-      color:black;
-    }
-    .post{
-      border: 2px solid lightgreen;
-      border-radius: 20px;
-      height: 150px;
-    }
-    .popular{
-      background: linear-gradient(90deg, #0F4C3A 0%, #267153 100%);
-      width: 100%;
-    }
-
-  </style>
 
   <body>
     <div class="container-fluid">
@@ -112,7 +81,10 @@
             </div>
 
             <div class="row">
-              <div class="col align-center">
+              <div class="col align-center ml-2">
+                <div class="publicar text-center">
+                  <button class="btn btncrearpublicacion btn-sm mb-3" type="button" name="button">Crear Publicación</button>
+                </div>
                <button class="btncategorias a btn-sm ml-2" type="button" name="button"> <img class="imagen" src="css/img/home.png" alt=""><br>Todo</button>
                <button class="btncategorias b btn-sm ml-2" type="button" name="button"><img class="imagen" src="css/img/reciclaje.png" alt=""><br>Reciclaje</button>
                <button class="btncategorias c btn-sm ml-2" type="button" name="button"><img class="imagenluz" src="css/img/tips.png" alt=""><br>Tips</button>
@@ -138,15 +110,15 @@
           </div>
 
           <!-- COLUMNA DE LA DERECHA/ SUGERENCIAS Y NOVEDADES -->
-          <div class="col-3 mt-3">
+          <div class="col-3 mt-3 popularesYsuguerencias">
 
             <div class="row">
               <div class="popular">
-                <h5 class="text-white">Popular Hoy</h5>
-                <div>
+                <h5 class="text-white text-center">Popular Hoy</h5>
+                <div class="fondosugerencias">
                   <span class="m-0">Nombre de Usuario</span>
                   <span>@Cuenta</span>
-                  <span>07-06-2020</span>
+                  <span class="text-right">07-06-2020</span>
                   <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ved est laborum.</p>
                 </div>
               </div>
@@ -154,12 +126,12 @@
 
             <div class="row mt-2">
               <div class="popular">
-                <h5 class="text-white">Sugerencias</h5>
-                <div class="">
-                  <span class="fas fa-user float-left"></span>
+                <h5 class="text-white text-center">Sugerencias</h5>
+                <div class="fondosugerencias text-left">
+                  <span class="fas fa-user float-left fotousuario"></span>
                   <span>Nombre y Apellido</span>
                   <p>@cuenta</p>
-                  <button class="btnseguir btn-sm" type="button" name="button">Seguir</button>
+                  <button class="btnseguir btn-sm float-right" type="button" name="button">Seguir</button>
                 </div>
               </div>
             </div>

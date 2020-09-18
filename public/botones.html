@@ -13,7 +13,7 @@
   <style media="screen">
 
 /* /////////////////////////BOTONES/////////////////////////////// */
-.btnseguir, .btnpublicar, .btnsiguiendo, .btncategorias, .btneditar {
+.btnseguir, .btnpublicar, .btnsiguiendo, .btncategorias, .btneditar, .btncrearpublicacion {
   box-shadow: 4px 4px 12px #888888;
   border-radius: 60px;
   opacity: 1;
@@ -83,8 +83,14 @@
   padding: 2px 20px;
 
 }
-.btnseguir:active, .btnsiguiendo:active, .btnpublicar:active, .btncategorias:active, .btneditar:active {
+.btnseguir:active, .btnsiguiendo:active, .btnpublicar:active, .btncategorias:active, .btneditar:active, .btncrearpublicacion:active {
   transform: translateY(3px);
+}
+.btncrearpublicacion {
+  background: linear-gradient(90deg, #0F4C3A 0%, #267153 100%);
+  width: 100%;
+  border-radius: 15px;
+  color:white;
 }
 
 
@@ -113,6 +119,11 @@
 
     <button class="btneditar btn-sm" type="button" name="button">Editar Perfil</button>
 
+<div class="row">
+  <div class="col-8">
+    <button class="btn btncrearpublicacion btn-sm mt-2" type="button" name="button">Crear Publicación</button>
+  </div>
+</div>
     </div>
   </body>
 </html>

@@ -216,7 +216,7 @@ li{
   }
 }
 @media (max-width: 720px) {
-  .menulateral{
+  .menulateral, .popularesYsuguerencias{
     display:none;
   }
   .top{
@@ -225,7 +225,7 @@ li{
 }
 
 /* //////////BOTONES DE CATEGORIAS ///////// */
-.btnseguir, .btnpublicar, .btnsiguiendo, .btncategorias {
+.btnseguir, .btnpublicar, .btnsiguiendo, .btncategorias,.btncrearpublicacion {
   box-shadow: 4px 4px 12px #888888;
   border-radius: 60px;
   opacity: 1;
@@ -298,7 +298,14 @@ li{
   padding: 2px 20px;
 }
 
-.btnseguir, .btnpublicar, .btnsiguiendo, .btncategorias, .btneditar {
+.btncrearpublicacion {
+  background: linear-gradient(90deg, #0F4C3A 0%, #267153 100%);
+  width: 80%;
+  border-radius: 15px;
+  color:white;
+}
+
+.btnseguir, .btnpublicar, .btnsiguiendo, .btncategorias, .btneditar, .btncrearpublicacion {
   box-shadow: 4px 4px 12px #888888;
   border-radius: 60px;
   opacity: 1;
@@ -307,6 +314,43 @@ li{
   text-decoration: none;
 }
 
-.btnseguir:active, .btnsiguiendo:active, .btnpublicar:active, .btncategorias:active, .btneditar:active {
+.btnseguir:active, .btnsiguiendo:active, .btnpublicar:active, .btncategorias:active, .btneditar:active, .btncrearpublicacion:active {
   transform: translateY(3px);
+}
+
+/* /////////////////PARTES DEL MENU Y PERFIL//////////////////// */
+nav {
+background: linear-gradient(89.96deg, #F66B0A 0.03%, #FBB044 99.96%);
+}
+.menulateral {
+background: linear-gradient(180deg, #F66A09 0%, #FBB044 100%);
+}
+.fas {
+color: white;
+}
+.top {
+display: inline;
+}
+#headertop {
+text-align: right;
+}
+.fotousuario, .iconoboton{
+  color:black;
+}
+.post{
+  border: 2px solid lightgreen;
+  border-radius: 20px;
+  height: 150px;
+}
+.popular{
+  background: linear-gradient(90deg, #0F4C3A 0%, #267153 100%);
+  width: 100%;
+  border-radius: 20px;
+  border:2px solid #267153;
+}
+.fondosugerencias{
+  background-color: white;
+  border-radius: 20px;
+  margin: 6px;
+  padding: 10px;
 }
