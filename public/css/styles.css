@@ -216,7 +216,97 @@ li{
   }
 }
 @media (max-width: 720px) {
-  .menulateral, .header{
+  .menulateral{
     display:none;
   }
+  .top{
+    font-size: 14px;
+  }
+}
+
+/* //////////BOTONES DE CATEGORIAS ///////// */
+.btnseguir, .btnpublicar, .btnsiguiendo, .btncategorias {
+  box-shadow: 4px 4px 12px #888888;
+  border-radius: 60px;
+  opacity: 1;
+  transition: 0.3s;
+  font-family: "Roboto";
+  text-decoration: none;
+}
+
+.btncategorias{
+  background: white;
+  color: black;
+  padding: 1px 40px;
+  border:1px solid #67BC52;
+  box-shadow: 4px 4px 12px #888888;
+}
+.btncategorias:hover {opacity: 0.8}
+
+.a{
+  border:1px solid black;
+}
+.b{
+  border:1px solid green;
+}
+.c{
+  border:1px solid yellow;
+}
+.d{
+  border:1px solid blue;
+}
+.e{
+  border:1px solid red;
+}
+.imagen{
+  width: 25px;
+}
+.imagenluz{
+  width: 18px;
+}
+
+/* //////////BOTONES DE PUBLICAR, SEGUIR, SIGUIENDO ///////// */
+.btnpublicar{
+  background: linear-gradient(90deg, #F66C0B 0%, #FBAE43 96.79%);
+  border-radius: 15px;
+  color: white;
+  border:none;
+  padding: 2px 80px;
+}
+
+.btnsiguiendo{
+  background: linear-gradient(90deg, #F66C0B 0%, #FBAE43 96.79%);
+  border-radius: 15px;
+  color: white;
+  border:none;
+  padding: 2px 30px;
+}
+
+.btnseguir{
+  background: white;
+  border-radius: 15px;
+  color: #F7710F;
+  border:1px solid #F7710F;
+  padding: 2px 40px;
+}
+
+.btneditar{
+  background: white;
+  border-radius: 15px;
+  color: #236C50;
+  border:1px solid #236C50;
+  padding: 2px 20px;
+}
+
+.btnseguir, .btnpublicar, .btnsiguiendo, .btncategorias, .btneditar {
+  box-shadow: 4px 4px 12px #888888;
+  border-radius: 60px;
+  opacity: 1;
+  transition: 0.3s;
+  font-family: "Roboto";
+  text-decoration: none;
+}
+
+.btnseguir:active, .btnsiguiendo:active, .btnpublicar:active, .btncategorias:active, .btneditar:active {
+  transform: translateY(3px);
 }

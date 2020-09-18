@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/2d1ba68bac.js" crossorigin="anonymous"></script>
+
+  </head>
+  <style media="screen">
+
+/* /////////////////////////BOTONES/////////////////////////////// */
+.btnseguir, .btnpublicar, .btnsiguiendo, .btncategorias, .btneditar {
+  box-shadow: 4px 4px 12px #888888;
+  border-radius: 60px;
+  opacity: 1;
+  transition: 0.3s;
+  font-family: "Roboto";
+  text-decoration: none;
+}
+
+.btncategorias{
+  background: white;
+  color: black;
+  padding: 2px 50px;
+  border:1px solid #67BC52;
+}
+.btncategorias:hover {opacity: 0.8}
+
+.a{
+  border:1px solid black;
+}
+.b{
+  border:1px solid green;
+}
+.c{
+  border:1px solid yellow;
+}
+.d{
+  border:1px solid blue;
+}
+.e{
+  border:1px solid red;
+}
+.imagen{
+  width: 25px;
+}
+.imagenluz{
+  width: 18px;
+}
+
+.btnpublicar{
+  background: linear-gradient(90deg, #F66C0B 0%, #FBAE43 96.79%);
+  border-radius: 15px;
+  color: white;
+  border:none;
+  padding: 2px 80px;
+}
+
+.btnsiguiendo{
+  background: linear-gradient(90deg, #F66C0B 0%, #FBAE43 96.79%);
+  border-radius: 15px;
+  color: white;
+  border:none;
+  padding: 2px 30px;
+}
+
+.btnseguir{
+  background: white;
+  border-radius: 15px;
+  color: #F7710F;
+  border:1px solid #F7710F;
+  padding: 2px 40px;
+}
+.btneditar{
+  background: white;
+  border-radius: 15px;
+  color: #236C50;
+  border:1px solid #236C50;
+  padding: 2px 20px;
+
+}
+.btnseguir:active, .btnsiguiendo:active, .btnpublicar:active, .btncategorias:active, .btneditar:active {
+  transform: translateY(3px);
+}
+
+
+  </style>
+  <body>
+    <div class="container">
+
+    <div class="row">
+
+    <div class="col align-center mt-2">
+
+     <button class="btncategorias a btn-sm" type="button" name="button"> <img class="imagen" src="css/img/home.png" alt=""><br>Todo</button>
+     <button class="btncategorias b btn-sm" type="button" name="button"><img class="imagen" src="css/img/reciclaje.png" alt=""><br>Reciclaje</button>
+     <button class="btncategorias c btn-sm" type="button" name="button"><img class="imagenluz" src="css/img/tips.png" alt=""><br>Tips</button>
+     <button class="btncategorias d btn-sm" type="button" name="button"><img class="imagen" src="css/img/eventos.png" alt=""><br>Eventos</button>
+     <button class="btncategorias e btn-sm" type="button" name="button"><img class="imagen" src="css/img/experiencias.png" alt=""><br>Experiencias</button>
+    </div>
+    </div>
+<br>
+
+    <button class="btnpublicar btn-sm" type="button" name="button">Publicar</button>
+
+    <button class="btnsiguiendo btn-sm" type="button" name="button">Siguiendo</button>
+
+    <button class="btnseguir btn-sm" type="button" name="button">Seguir</button>
+
+    <button class="btneditar btn-sm" type="button" name="button">Editar Perfil</button>
+
+    </div>
+  </body>
+</html>
