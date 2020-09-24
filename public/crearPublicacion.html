@@ -1,0 +1,52 @@
+    <html lang="es" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+      </head>
+
+      <style media="screen">
+        .nuevaPublicacion{
+          background-color: #E5E5E5;
+          border-radius: 20px;
+          text-align: center;
+        }
+        .titulosPublicacion{
+          color:#104D3B;
+          font-family: Roboto;
+        }
+        .btnvolver{
+          float: left;
+        }
+      </style>
+      <body>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 publicacion"></div>
+              <div class="nuevaPublicacion">
+                <button class="btn btneditar btn-sm d-inline btnvolver" type="button" name="button"><i class="fas fa-angle-double-left"></i>Volver</button>
+                <h2 class="d-inline titulosPublicacion">Crear Publicación</h2>
+                <h5 class="titulosPublicacion" >Seleccione que tipo de publicación quieres crear</h5>
+                <div class="botones">
+                  <button class="btn btncategorias a btn-sm ml-2 mt-1" type="button" name="button"> <img class="imagen" src="css/img/home.png" alt=""><br>Todo</button>
+                  <button class="btn btncategorias b btn-sm ml-2 mt-1" type="button" name="button"><img class="imagen" src="css/img/reciclaje.png" alt=""><br>Reciclaje</button>
+                  <button class="btn btncategorias c btn-sm ml-2 mt-1" type="button" name="button"><img class="imagenluz" src="css/img/tips.png" alt=""><br>Tips</button>
+                  <button class="btn btncategorias d btn-sm ml-2 mt-1" type="button" name="button"><img class="imagen" src="css/img/eventos.png" alt=""><br>Eventos</button>
+                  <button class="btn btncategorias e btn-sm ml-2 mt-1" type="button" name="button"><img class="imagen" src="css/img/experiencias.png" alt=""><br>Experiencias</button>
+                </div>
+                <div class="input-group">
+                 <textarea class="form-control mt-2" aria-label="With textarea" rows="5" placeholder="Escribe aqui.."></textarea>
+                </div>
+                <button class="btn btnseleccionar btn-sm mt-2 d-block" type="button" name="button">Seleccionar imágen o video</button>
+                <button class="btn btnpublicar btn-sm  mt-5 mb-2" type="button" name="button">Publicar</button>
+              </div>
+
+
+
+
+
+        </div>
+      </div>
+
+    </body>

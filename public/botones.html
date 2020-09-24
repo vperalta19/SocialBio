@@ -13,7 +13,7 @@
   <style media="screen">
 
 /* /////////////////////////BOTONES/////////////////////////////// */
-.btnseguir, .btnpublicar, .btnsiguiendo, .btncategorias, .btneditar, .btncrearpublicacion {
+.btnseguir, .btnpublicar, .btnsiguiendo, .btncategorias, .btneditar, .btncrearpublicacion, .btnseleccionar {
   box-shadow: 4px 4px 12px #888888;
   border-radius: 60px;
   opacity: 1;
@@ -83,12 +83,22 @@
   padding: 2px 20px;
 
 }
-.btnseguir:active, .btnsiguiendo:active, .btnpublicar:active, .btncategorias:active, .btneditar:active, .btncrearpublicacion:active {
+.fa-angle-double-left{
+  color: #236C50;
+  padding-right: 3px;
+}
+.btnseguir:active, .btnsiguiendo:active, .btnpublicar:active, .btncategorias:active, .btneditar:active, .btncrearpublicacion:active, .btnseleccionar:active {
   transform: translateY(3px);
 }
 .btncrearpublicacion {
   background: linear-gradient(90deg, #0F4C3A 0%, #267153 100%);
   width: 100%;
+  border-radius: 15px;
+  color:white;
+}
+.btnseleccionar{
+  background: linear-gradient(90deg, #0F4C3A 0%, #267153 100%);
+  width: 70%;
   border-radius: 15px;
   color:white;
 }
@@ -102,26 +112,31 @@
 
     <div class="col align-center mt-2">
 
-     <button class="btncategorias a btn-sm" type="button" name="button"> <img class="imagen" src="css/img/home.png" alt=""><br>Todo</button>
-     <button class="btncategorias b btn-sm" type="button" name="button"><img class="imagen" src="css/img/reciclaje.png" alt=""><br>Reciclaje</button>
-     <button class="btncategorias c btn-sm" type="button" name="button"><img class="imagenluz" src="css/img/tips.png" alt=""><br>Tips</button>
-     <button class="btncategorias d btn-sm" type="button" name="button"><img class="imagen" src="css/img/eventos.png" alt=""><br>Eventos</button>
-     <button class="btncategorias e btn-sm" type="button" name="button"><img class="imagen" src="css/img/experiencias.png" alt=""><br>Experiencias</button>
+     <button class="btn btncategorias a btn-sm" type="button" name="button"> <img class="imagen" src="css/img/home.png" alt=""><br>Todo</button>
+     <button class="btn btncategorias b btn-sm" type="button" name="button"><img class="imagen" src="css/img/reciclaje.png" alt=""><br>Reciclaje</button>
+     <button class="btn btncategorias c btn-sm" type="button" name="button"><img class="imagenluz" src="css/img/tips.png" alt=""><br>Tips</button>
+     <button class="btn btncategorias d btn-sm" type="button" name="button"><img class="imagen" src="css/img/eventos.png" alt=""><br>Eventos</button>
+     <button class="btn btncategorias e btn-sm" type="button" name="button"><img class="imagen" src="css/img/experiencias.png" alt=""><br>Experiencias</button>
     </div>
     </div>
 <br>
 
-    <button class="btnpublicar btn-sm" type="button" name="button">Publicar</button>
+    <button class="btn btnpublicar btn-sm" type="button" name="button">Publicar</button>
 
-    <button class="btnsiguiendo btn-sm" type="button" name="button">Siguiendo</button>
+    <button class="btn btnsiguiendo btn-sm" type="button" name="button">Siguiendo</button>
 
-    <button class="btnseguir btn-sm" type="button" name="button">Seguir</button>
+    <button class="btn btnseguir btn-sm" type="button" name="button">Seguir</button>
 
-    <button class="btneditar btn-sm" type="button" name="button">Editar Perfil</button>
+    <button class=" btn btneditar btn-sm" type="button" name="button">Editar Perfil</button>
+
+    <button class="btn btneditar btn-sm" type="button" name="button"><i class="fas fa-angle-double-left"></i>Volver</button>
+
+
 
 <div class="row">
   <div class="col-8">
     <button class="btn btncrearpublicacion btn-sm mt-2" type="button" name="button">Crear Publicación</button>
+    <button class="btn btnseleccionar btn-sm mt-2" type="button" name="button">Seleccionar imágen o video</button>
   </div>
 </div>
     </div>
